@@ -52,3 +52,10 @@
 @media only screen and (min-width : 1200px) {
 
 }
+
+@media only screen and (min-width : 1800px) {
+	.list-objects li {
+		display: inline-block;
+		width: 49%;
+	}
+}
