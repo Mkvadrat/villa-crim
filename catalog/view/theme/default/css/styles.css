@@ -1,0 +1,170 @@
+header, footer, nav, article, aside, details,
+figcaption, figure, main, section, legend {
+	display: block; }
+
+abbr {
+	border-bottom: none;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+abbr[title], acronym[title] {
+	border-bottom-width: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	background: #ffc298 !important;
+}
+
+.list-objects {
+	padding-top: 20px;
+}
+
+.list-objects li {
+	position: relative;
+	background-color: white;
+	border-radius: 5px;
+	min-height: 192px;
+	height: auto;
+	margin-bottom: 9px;
+}
+
+.list-objects li::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	display: block;
+	height: 1px;
+	width: 100%;
+	background-color: #c99674;
+}
+
+.list-objects li .block-photo {
+	position: absolute;
+	width: 30%;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	border-radius: 5px 0 0 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.list-objects li .block-photo .labe {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+.list-objects li .block-description {
+	overflow: hidden;
+	padding: 15px;
+	margin-left: 255px;
+}
+
+.list-objects li .block-description .title {
+	padding-bottom: 10px;
+	color: black;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.list-objects li .block-description .info-block {
+	overflow: hidden;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.list-objects li .block-description .info-block div {
+	float: left;
+	width: 50%;
+}
+
+.list-objects li .block-description .info-block div dl {
+	margin-bottom: 5px;
+}
+
+.list-objects li .block-description .info-block div dt,
+.list-objects li .block-description .info-block div dd {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.list-objects li .block-description .info-block div dt {
+	color: black;
+	font-weight: 400;
+}
+
+.list-objects li .block-description .info-block div dd {
+	color: #7b483a;
+	font-weight: 700;
+}
+
+.list-objects li .block-description .more-block {
+	overflow: hidden;
+}
+
+.list-objects li .block-description .more-block div {
+	float: left;
+	width: 50%;
+}
+
+.list-objects li .block-description .more-block .more {
+	display: inline-block;
+	padding: 7px 9px;
+	background-color: #c69a6c;
+	background-image: linear-gradient(to top, #543226 0%, #874f40 100%);
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.list-objects li .block-description .more-block .more:hover {
+	background-image: linear-gradient(to bottom, #543226 0%, #874f40 100%);
+}
+
+.list-objects li .block-description .more-block .id {
+	color: #7b483a;
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-left: 15px;
+}
+
+.list-objects li .block-description .more-block .id b {
+	font-weight: 700;
+}
+
+.list-objects li .block-description .more-block .price-rub,
+.list-objects li .block-description .more-block .price-usd {
+	display: block;
+	color: #cd0e10;
+	font-family: inherit;
+	font-weight: 700;
+	line-height: 18px;
+	font-size: 24px;
+}
+
+.list-objects li .block-description .more-block .price-usd {
+	font-size: 18px;
+}
