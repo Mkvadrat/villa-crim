@@ -20,12 +20,9 @@ abbr[title], acronym[title] {
 	        box-sizing: border-box;
 }
 
-body {
-	background: #ffc298 !important;
-}
-
 .list-objects {
 	padding: 20px 0;
+	list-style: none;
 }
 
 .list-objects li {
@@ -35,6 +32,8 @@ body {
 	min-height: 192px;
 	height: auto;
 	margin-bottom: 9px;
+	vertical-align: top;
+	
 }
 
 .list-objects li::after {
