@@ -100,299 +100,61 @@
         </div>
 <button type="button" id="button-filter" class="btn btn-primary">Фильтр</button>
 </div>
-      <div class="row" id="categ">
-      
-
-      </div>
+      <div class="row" id="categ"></div>
       <br />
       <div class="row" id="rowp">
 				<div class="col-md-9">
 					<ul class="list-objects">
+						<?php foreach ($products as $product) { ?>
 							<li>
-									<div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-											<img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
+									<div class="block-photo" style="background-image: url(<?php echo $product['thumb']; ?>);">
+										<?php if($product['badge']){ ?>
+												<?php if($product['badge'] == 2){ ?>
+												 <img class="labe" src="catalog/view/theme/default/image/label-new.png" alt="">
+												<?php }elseif($product['badge'] == 3){ ?>
+													<img class="labe" src="catalog/view/theme/default/image/label-urgently.png" alt="">
+												<?php }elseif($product['badge'] == 4){ ?>
+													<img class="labe" src="catalog/view/theme/default/image/label-sale.png" alt="">
+												<?php }elseif($product['badge'] == 5){ ?>
+													<img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
+												<?php } ?>
+										<?php } ?>
 									</div>
 									<div class="block-description">
-											<p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
+											<p class="title"><?php echo $product['name']; ?></p>
 											<div class="info-block">
+												<?php if($product['options']){ ?>
+													<?php foreach($product['options'] as $value){ ?>
 													<div>
-															<dl>
-																	<dt>Район:</dt>
-																	<dd>Алушта</dd>
-															</dl>
-															<dl>
-																	<dt>Тип:</dt>
-																	<dd>Квартиры</dd>
-															</dl>
-															<dl>
-																	<dt>Особенности:</dt>
-																	<dd>У моря</dd>
-															</dl>
-													</div>
-													<div>
-															<dl>
-																	<dt>Состояние:</dt>
-																	<dd>Хорошее</dd>
-															</dl>
-															<dl>
-																	<dt>Этаж:</dt>
-																	<dd>5</dd>
-															</dl>
-															<dl>
-																	<dt>Кол-во комнат:</dt>
-																	<dd>3</dd>
-															</dl>
-													</div>
+														<dl>
+																<dt><?php echo $value['name']; ?></dt>
+																<dd><?php echo $value['value']; ?></dd>
+														</dl>
+													</div>											
+													<?php } ?>
+												<?php } ?>
 											</div>
 											<div class="more-block">
 													<div>
-															<a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
+															<a href="<?php echo $product['href']; ?>" class="more">Подробнее</a>
+															
+															<?php if($product['model']){ ?>
+																<span class="id">ID <b><?php echo $product['model']; ?></b></span>
+															<?php } ?>
 													</div>
-													<div>
-															<span class="price-rub">37 801 205 руб.</span>
-															<span class="price-usd">650 000 $</span>
-													</div>
+													<?php if($product['price']) { ?>
+														<div>
+																<span class="price-rub"><?php echo $product['rub']; ?> руб.</span>
+																<span class="price-usd"><?php echo $product['price']; ?> $</span>
+														</div>
+													<?php } ?>
 											</div>
 									</div>
 							</li>
-							<li>
-									<div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-											<img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
-									</div>
-									<div class="block-description">
-											<p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
-											<div class="info-block">
-													<div>
-															<dl>
-																	<dt>Район:</dt>
-																	<dd>Алушта</dd>
-															</dl>
-															<dl>
-																	<dt>Тип:</dt>
-																	<dd>Квартиры</dd>
-															</dl>
-															<dl>
-																	<dt>Особенности:</dt>
-																	<dd>У моря</dd>
-															</dl>
-													</div>
-													<div>
-															<dl>
-																	<dt>Состояние:</dt>
-																	<dd>Хорошее</dd>
-															</dl>
-															<dl>
-																	<dt>Этаж:</dt>
-																	<dd>5</dd>
-															</dl>
-															<dl>
-																	<dt>Кол-во комнат:</dt>
-																	<dd>3</dd>
-															</dl>
-													</div>
-											</div>
-											<div class="more-block">
-													<div>
-															<a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
-													</div>
-													<div>
-															<span class="price-rub">37 801 205 руб.</span>
-															<span class="price-usd">650 000 $</span>
-													</div>
-											</div>
-									</div>
-							</li>
-              <li>
-                  <div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-                      <img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
-                  </div>
-                  <div class="block-description">
-                      <p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
-                      <div class="info-block">
-                          <div>
-                              <dl>
-                                  <dt>Район:</dt>
-                                  <dd>Алушта</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Тип:</dt>
-                                  <dd>Квартиры</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Особенности:</dt>
-                                  <dd>У моря</dd>
-                              </dl>
-                          </div>
-                          <div>
-                              <dl>
-                                  <dt>Состояние:</dt>
-                                  <dd>Хорошее</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Этаж:</dt>
-                                  <dd>5</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Кол-во комнат:</dt>
-                                  <dd>3</dd>
-                              </dl>
-                          </div>
-                      </div>
-                      <div class="more-block">
-                          <div>
-                              <a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
-                          </div>
-                          <div>
-                              <span class="price-rub">37 801 205 руб.</span>
-                              <span class="price-usd">650 000 $</span>
-                          </div>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-                      <img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
-                  </div>
-                  <div class="block-description">
-                      <p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
-                      <div class="info-block">
-                          <div>
-                              <dl>
-                                  <dt>Район:</dt>
-                                  <dd>Алушта</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Тип:</dt>
-                                  <dd>Квартиры</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Особенности:</dt>
-                                  <dd>У моря</dd>
-                              </dl>
-                          </div>
-                          <div>
-                              <dl>
-                                  <dt>Состояние:</dt>
-                                  <dd>Хорошее</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Этаж:</dt>
-                                  <dd>5</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Кол-во комнат:</dt>
-                                  <dd>3</dd>
-                              </dl>
-                          </div>
-                      </div>
-                      <div class="more-block">
-                          <div>
-                              <a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
-                          </div>
-                          <div>
-                              <span class="price-rub">37 801 205 руб.</span>
-                              <span class="price-usd">650 000 $</span>
-                          </div>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-                      <img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
-                  </div>
-                  <div class="block-description">
-                      <p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
-                      <div class="info-block">
-                          <div>
-                              <dl>
-                                  <dt>Район:</dt>
-                                  <dd>Алушта</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Тип:</dt>
-                                  <dd>Квартиры</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Особенности:</dt>
-                                  <dd>У моря</dd>
-                              </dl>
-                          </div>
-                          <div>
-                              <dl>
-                                  <dt>Состояние:</dt>
-                                  <dd>Хорошее</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Этаж:</dt>
-                                  <dd>5</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Кол-во комнат:</dt>
-                                  <dd>3</dd>
-                              </dl>
-                          </div>
-                      </div>
-                      <div class="more-block">
-                          <div>
-                              <a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
-                          </div>
-                          <div>
-                              <span class="price-rub">37 801 205 руб.</span>
-                              <span class="price-usd">650 000 $</span>
-                          </div>
-                      </div>
-                  </div>
-              </li>
-              <li>
-                  <div class="block-photo" style="background-image: url(catalog/view/theme/default/images/object-1.jpg);">
-                      <img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
-                  </div>
-                  <div class="block-description">
-                      <p class="title">Продается двухуровневый пентхаус, Испанская деревня</p>
-                      <div class="info-block">
-                          <div>
-                              <dl>
-                                  <dt>Район:</dt>
-                                  <dd>Алушта</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Тип:</dt>
-                                  <dd>Квартиры</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Особенности:</dt>
-                                  <dd>У моря</dd>
-                              </dl>
-                          </div>
-                          <div>
-                              <dl>
-                                  <dt>Состояние:</dt>
-                                  <dd>Хорошее</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Этаж:</dt>
-                                  <dd>5</dd>
-                              </dl>
-                              <dl>
-                                  <dt>Кол-во комнат:</dt>
-                                  <dd>3</dd>
-                              </dl>
-                          </div>
-                      </div>
-                      <div class="more-block">
-                          <div>
-                              <a href="#" class="more">Подробнее</a><span class="id">ID <b>777</b></span>
-                          </div>
-                          <div>
-                              <span class="price-rub">37 801 205 руб.</span>
-                              <span class="price-usd">650 000 $</span>
-                          </div>
-                      </div>
-                  </div>
-              </li>
+						<?php } ?>
 					</ul>
 				</div>
-        <?php foreach ($products as $product) { ?>
+        <!--<?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb">
             <div class="image">
@@ -402,13 +164,6 @@
               <div class="caption">
               <p><?php echo $product['name']; ?></p>
                 <?php if($product['price']) { ?>
-                <!--<p class="price"><span>Цена:</span>
-                  <?php if (!$product['pricerus']) { ?>
-                  <?php echo $product['price']; ?>
-                  <?php } else { ?>
-                  <span><?php echo $product['pricerus']; ?></span>
-                  <?php } ?>
-                </p>-->
 								<p class="price"><span>Цена:</span>
 								<?php echo $product['rub']; ?> руб. / <?php echo $product['price']; ?> $
 								</p>
@@ -445,7 +200,7 @@
             </div>
           </div>
         </div>
-        <?php } ?>
+        <?php } ?>-->
       </div>
       <div class="row">
         <div class="col-sm-6 text-left"><?php echo $results; ?></div>

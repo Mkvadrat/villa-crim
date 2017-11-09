@@ -282,13 +282,16 @@ class ControllerProductCategory extends Controller {
                 }else{
                     $badge = '';
 				}
-
-
+				
+				//options
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
+					'options'     => $this->model_catalog_product->getProductOptions($result['product_id']),
 					'badge'		  => $badge,
+					'model'		  => $result['model'],
 					'name'        => $result['name'],
+					//'name'        => utf8_substr(strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8')), 0, 25) ,
 					///'pricerus'    => $result['pricerus'],
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
 					'price'       => $price,

@@ -962,7 +962,7 @@ if (isset($this->request->get['filter_FIO'])) {
 		
 		$data['badge_load'] = $product_info['upc'];
 				
-		$data['badge_array'] = array('1' => 'Нет', '2' => 'Новое', '3' => 'Срочно', '4' => 'Продано');
+		$data['badge_array'] = array('1' => 'Нет', '2' => 'Новое', '3' => 'Срочно', '4' => 'Продано', '5' => 'Эксклюзивная');
 		
 		if (isset($this->request->post['model'])) {
 			$data['model'] = $this->request->post['model'];
