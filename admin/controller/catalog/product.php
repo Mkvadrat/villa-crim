@@ -594,6 +594,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_ymore'] = $this->language->get('entry_ymore');
 		$data['entry_vidmore'] = $this->language->get('entry_vidmore');
 		$data['entry_vidgori'] = $this->language->get('entry_vidgori');
+		$data['entry_visible'] = $this->language->get('entry_visible');
 		$data['entry_komunikacion'] = $this->language->get('entry_komunikacion');
 		$data['entry_description'] = $this->language->get('entry_description');
 		$data['entry_meta_title'] = $this->language->get('entry_meta_title');
@@ -960,7 +961,9 @@ if (isset($this->request->get['filter_FIO'])) {
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		
-		$data['badge_load'] = $product_info['upc'];
+		if(!empty($product_info)){
+			$data['badge_load'] = $product_info['upc'];
+		}
 				
 		$data['badge_array'] = array('1' => 'Нет', '2' => 'Новое', '3' => 'Срочно', '4' => 'Продано', '5' => 'Эксклюзивная');
 		
@@ -1039,6 +1042,12 @@ if (isset($this->request->get['filter_FIO'])) {
 		} else {
 			$data['product_store'] = array(0);
 		}
+		
+		if (isset($this->request->post['visible'])) {
+			$data['visible'] = $this->request->post['visible'];
+		} elseif (!empty($product_info)) {
+			$data['visible'] = $product_info['visible'];
+		}
 
 		if (isset($this->request->post['keyword'])) {
 			$data['keyword'] = $this->request->post['keyword'];
@@ -1047,6 +1056,7 @@ if (isset($this->request->get['filter_FIO'])) {
 		} else {
 			$data['keyword'] = '';
 		}
+		
 		if (isset($this->request->post['ymore'])) {
 			$data['ymore'] = $this->request->post['ymore'];
 		} elseif (!empty($product_info)) {

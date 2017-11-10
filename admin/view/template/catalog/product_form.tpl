@@ -580,6 +580,33 @@
                   </div>
                 </div>
               </div>
+							
+              <div class="form-group">
+                <label class="col-sm-2 control-label"><?php echo $entry_visible; ?></label>
+                <div class="col-sm-10">
+                  <label class="radio-inline">
+                    <?php if ($visible) { ?>
+                    <input type="radio" name="visible" value="1" checked="checked" />
+                    <?php echo $text_yes; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="visible" value="1" />
+                    <?php echo $text_yes; ?>
+                    <?php } ?>
+                  </label>
+                  <label class="radio-inline">
+                    <?php if (!$visible) { ?>
+                    <input type="radio" name="visible" value="0" checked="checked" />
+                    <?php echo $text_no; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="visible" value="0" />
+                    <?php echo $text_no; ?>
+                    <?php } ?>
+                  </label>
+                </div>
+              </div>
+
+							
+							
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-filter"><span data-toggle="tooltip" title="<?php echo $help_filter; ?>"><?php echo $entry_filter; ?></span></label>
                 <div class="col-sm-10">

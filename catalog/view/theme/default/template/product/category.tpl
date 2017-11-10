@@ -123,6 +123,16 @@
 									<div class="block-description">
 											<p class="title"><?php echo $product['name']; ?></p>
 											<div class="info-block">
+												<?php if($product['filter_data']){ ?>
+													<?php foreach($product['filter_data'] as $value){ ?>
+													<div>
+														<dl>
+																<dt><?php echo $value['name']; ?></dt>
+																<dd><?php echo $value['value']; ?></dd>
+														</dl>
+													</div>	
+													<?php } ?>
+												<?php } ?>
 												<?php if($product['options']){ ?>
 													<?php foreach($product['options'] as $value){ ?>
 													<div>

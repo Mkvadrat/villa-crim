@@ -50,6 +50,14 @@ class ModelCatalogCategory extends Model {
 
 		return $filter_group_data;
 	}
+	
+	public function getFiltersData($language_id, $product_id){
+		$query = $this->db->query("SELECT fgd.name, fd.name AS value FROM " . DB_PREFIX . "filter_group_description AS fgd JOIN " . DB_PREFIX . "filter_description AS fd JOIN " . DB_PREFIX . "filter as f JOIN " . DB_PREFIX . "product_filter AS pf JOIN " . DB_PREFIX . "product AS p
+		ON (fgd.filter_group_id = fd.filter_group_id) AND (fgd.filter_group_id != 2) AND (fgd.filter_group_id != 7) AND (pf.filter_id = fd.filter_id) AND (pf.filter_id = f.filter_id) AND (fgd.filter_group_id = f.filter_group_id) AND (p.product_id = pf.product_id) AND (p.visible = 0)
+		AND (fgd.language_id = '" . (int)$language_id . "') AND (pf.product_id = '" . (int)$product_id . "') ORDER BY f.sort_order");
+
+		return $query->rows;
+	}
 
 	public function getCategoryLayoutId($category_id) {
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "category_to_layout WHERE category_id = '" . (int)$category_id . "' AND store_id = '" . (int)$this->config->get('config_store_id') . "'");

@@ -283,11 +283,11 @@ class ControllerProductCategory extends Controller {
                     $badge = '';
 				}
 				
-				//options
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
-					'options'     => $this->model_catalog_product->getProductOptions($result['product_id']),
+					'filter_data' => $this->model_catalog_category->getFiltersData(2, $result['product_id']),
+					'options'     => $this->model_catalog_product->getProductOptions($result['product_id']),//options
 					'badge'		  => $badge,
 					'model'		  => $result['model'],
 					'name'        => $result['name'],
