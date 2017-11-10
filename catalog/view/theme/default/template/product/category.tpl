@@ -133,7 +133,7 @@
 													</div>	
 													<?php } ?>
 												<?php } ?>
-												<?php if($product['options']){ ?>
+												<?php if($product['options'] && $visible != 1){ ?>
 													<?php foreach($product['options'] as $value){ ?>
 													<div>
 														<dl>

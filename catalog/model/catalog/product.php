@@ -12,6 +12,7 @@ class ModelCatalogProduct extends Model {
 				'product_id'       => $query->row['product_id'],
 				'currency_id'      => $query->row['currency_id'],
 				'name'             => $query->row['name'],
+				'visible'          => $query->row['visible'],
 				'totalarea'        => $query->row['totalarea'],
 				'houseroom'        => $query->row['houseroom'],
 				'kitchen'          => $query->row['kitchen'],

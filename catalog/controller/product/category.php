@@ -276,6 +276,8 @@ class ControllerProductCategory extends Controller {
 				}
 				
 				$data['badge'] = $result['upc'];
+				
+				$data['visible'] = $result['visible'];
 
                 if($result['upc']){
                     $badge = $result['upc'];
