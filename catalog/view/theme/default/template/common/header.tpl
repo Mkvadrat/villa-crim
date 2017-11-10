@@ -52,7 +52,8 @@
 <script type="text/javascript" src="catalog/view/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <link rel="stylesheet" href="catalog/view/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 
-<link rel="stylesheet" href="catalog/view/theme/default/css/reset.css"> <!-- отваливаются стили -->
+<!-- <link rel="stylesheet" href="catalog/view/theme/default/css/reset.css"> --> <!-- отваливаются стили -->
+
 <link rel="stylesheet" href="catalog/view/theme/default/catalog/view/theme/default/css/fonts.css">
 <link rel="stylesheet" href="catalog/view/theme/default/css/styles.css">
 <link rel="stylesheet" href="catalog/view/theme/default/css/media.css">
