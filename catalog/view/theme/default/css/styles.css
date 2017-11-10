@@ -20,6 +20,10 @@ abbr[title], acronym[title] {
 	        box-sizing: border-box;
 }
 
+#categ {
+	margin-bottom: 0;
+}
+
 .list-objects {
 	display: flex;
 	-webkit-flex-wrap: wrap;
@@ -111,6 +115,7 @@ abbr[title], acronym[title] {
 	font-family: 'Franklin Gothic';
 	font-size: 14px;
 	line-height: 20px;
+	letter-spacing: 0;
 }
 
 .list-objects li .block-description .info-block div dt {
