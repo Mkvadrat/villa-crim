@@ -264,11 +264,23 @@ class ControllerProductSearch extends Controller {
 				} else {
 					$rating = false;
 				}
+				
+				if($result['upc']){
+                    $badge = $result['upc'];
+                }else{
+                    $badge = '';
+				}
+				
+				$data['visible'] = $result['visible'];
 
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
+					'badge'		  => $badge,
+					'model'		  => $result['model'],
+					'filter_data' => $this->model_catalog_category->getFiltersData(2, $result['product_id']),
+					'options'     => $this->model_catalog_product->getProductOptions($result['product_id']),//options
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
 					'price'       => $price,
 					'rub'		  => $rub,

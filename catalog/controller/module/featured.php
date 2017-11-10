@@ -12,6 +12,7 @@ class ControllerModuleFeatured extends Controller {
 		$data['button_compare'] = $this->language->get('button_compare');
 
 		$this->load->model('catalog/product');
+		$this->load->model('catalog/category');
 
 		$this->load->model('tool/image');
 
@@ -82,11 +83,25 @@ class ControllerModuleFeatured extends Controller {
 				} else {
 					$rating = false;
 				}
+				
+				$data['badge'] = $product_info['upc'];
+				
+				$data['visible'] = $product_info['visible'];
+
+                if($product_info['upc']){
+                    $badge = $product_info['upc'];
+                }else{
+                    $badge = '';
+				}
 
 				$data['products'][] = array(
 					'product_id'  => $product_info['product_id'],
 					'thumb'       => $image,
 					'name'        => $product_info['name'],
+					'filter_data' => $this->model_catalog_category->getFiltersData(2, $product_info['product_id']),
+					'options'     => $this->model_catalog_product->getProductOptions($product_info['product_id']),//options
+					'badge'		  => $badge,
+					'model'		  => $product_info['model'],
 					//'pricerus'        => $product_info['pricerus'],
 					'price'       => $price,
 					'rub'		  => $rub,
