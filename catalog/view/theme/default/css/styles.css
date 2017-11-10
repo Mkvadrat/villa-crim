@@ -21,6 +21,15 @@ abbr[title], acronym[title] {
 }
 
 .list-objects {
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	    -webkit-justify-content: space-between;
+	            justify-content: space-between;
 	padding: 20px 0;
 	list-style: none;
 }
@@ -72,9 +81,8 @@ abbr[title], acronym[title] {
 }
 
 .list-objects li .block-description .title {
-	padding-bottom: 10px;
 	color: black;
-	font-family: "MyriadPro-Regular";
+	font-family: 'Franklin Gothic';
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
@@ -94,13 +102,13 @@ abbr[title], acronym[title] {
 }
 
 .list-objects li .block-description .info-block div dl {
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 .list-objects li .block-description .info-block div dt,
 .list-objects li .block-description .info-block div dd {
 	display: inline-block;
-	font-family: "MyriadPro-Regular";
+	font-family: 'Franklin Gothic';
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -132,7 +140,7 @@ abbr[title], acronym[title] {
 	border-radius: 5px;
 	text-align: center;
 	color: white;
-	font-family: "MyriadPro-Regular";
+	font-family: 'Franklin Gothic';
 	font-size: 14px;
 	font-weight: 400;
 	text-decoration: none;
@@ -144,7 +152,7 @@ abbr[title], acronym[title] {
 
 .list-objects li .block-description .more-block .id {
 	color: #7b483a;
-	font-family: "MyriadPro-Regular";
+	font-family: 'Franklin Gothic';
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
@@ -159,7 +167,7 @@ abbr[title], acronym[title] {
 .list-objects li .block-description .more-block .price-usd {
 	display: block;
 	color: #e8a000;
-	font-family: "MyriadPro-Regular";
+	font-family: 'Franklin Gothic';
 	font-weight: 700;
 	line-height: 18px;
 	font-size: 24px;
