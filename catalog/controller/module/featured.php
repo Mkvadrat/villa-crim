@@ -98,6 +98,7 @@ class ControllerModuleFeatured extends Controller {
 					'product_id'  => $product_info['product_id'],
 					'thumb'       => $image,
 					'name'        => $product_info['name'],
+					'visible'     => $product_info['visible'],
 					'filter_data' => $this->model_catalog_category->getFiltersData(2, $product_info['product_id']),
 					'options'     => $this->model_catalog_product->getProductOptions($product_info['product_id']),//options
 					'badge'		  => $badge,

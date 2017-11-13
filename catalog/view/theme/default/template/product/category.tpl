@@ -133,7 +133,7 @@
 													</div>	
 													<?php } ?>
 												<?php } ?>
-												<?php if($product['options'] && $visible != 1){ ?>
+												<?php if($product['options'] && $product['visible'] == 1){ ?>
 													<?php foreach($product['options'] as $option){ ?>
 													<?php if($option['product_option_value']){ ?>
 														<?php foreach ($option['product_option_value'] as $option_value) { ?>

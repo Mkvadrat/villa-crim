@@ -61,14 +61,25 @@
 </div>	
 <?php } ?>
 <?php } ?>
-<?php if($product['options'] && $visible != 1){ ?>
-<?php foreach($product['options'] as $value){ ?>
+<?php if($product['options'] && $product['visible'] == 1){ ?>
+<?php foreach($product['options'] as $option){ ?>
+<?php if($option['product_option_value']){ ?>
+<?php foreach ($option['product_option_value'] as $option_value) { ?>
 <div>
 <dl>
-<dt><?php echo $value['name']; ?></dt>
-<dd><?php echo $value['value']; ?></dd>
+<dt><?php echo $option['name']; ?></dt>
+<dd><?php echo $option_value['name']; ?></dd>
 </dl>
-</div>											
+</div>
+<?php } ?>
+<?php }else{ ?>
+<div>
+<dl>
+<dt><?php echo $option['name']; ?></dt>
+<dd><?php echo $option['value']; ?></dd>
+</dl>
+</div>
+<?php } ?>
 <?php } ?>
 <?php } ?>
 </div>
