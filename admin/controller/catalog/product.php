@@ -1047,6 +1047,8 @@ if (isset($this->request->get['filter_FIO'])) {
 			$data['visible'] = $this->request->post['visible'];
 		} elseif (!empty($product_info)) {
 			$data['visible'] = $product_info['visible'];
+		}else{
+			$data['visible'] = 0;
 		}
 
 		if (isset($this->request->post['keyword'])) {

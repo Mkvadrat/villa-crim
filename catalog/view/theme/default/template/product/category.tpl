@@ -114,9 +114,9 @@
 												<?php }elseif($product['badge'] == 3){ ?>
 													<img class="labe" src="catalog/view/theme/default/image/label-urgently.png" alt="">
 												<?php }elseif($product['badge'] == 4){ ?>
-													<img class="labe" src="catalog/view/theme/default/image/label-sale.png" alt="">
-												<?php }elseif($product['badge'] == 5){ ?>
 													<img class="labe" src="catalog/view/theme/default/images/labe.png" alt="">
+												<?php }elseif($product['badge'] == 5){ ?>
+													<img class="labe" src="catalog/view/theme/default/image/label-sale.png" alt="">
 												<?php } ?>
 										<?php } ?>
 									</div>
@@ -134,13 +134,24 @@
 													<?php } ?>
 												<?php } ?>
 												<?php if($product['options'] && $visible != 1){ ?>
-													<?php foreach($product['options'] as $value){ ?>
+													<?php foreach($product['options'] as $option){ ?>
+													<?php if($option['product_option_value']){ ?>
+														<?php foreach ($option['product_option_value'] as $option_value) { ?>
+														<div>
+															<dl>
+																	<dt><?php echo $option['name']; ?></dt>
+																	<dd><?php echo $option_value['name']; ?></dd>
+															</dl>
+														</div>
+														<?php } ?>
+													<?php }else{ ?>
 													<div>
 														<dl>
-																<dt><?php echo $value['name']; ?></dt>
-																<dd><?php echo $value['value']; ?></dd>
+																<dt><?php echo $option['name']; ?></dt>
+																<dd><?php echo $option['value']; ?></dd>
 														</dl>
-													</div>											
+													</div>
+													<?php } ?>
 													<?php } ?>
 												<?php } ?>
 											</div>
