@@ -394,3 +394,63 @@ REGEX: ~(require|include)(_once)?\(([^)]+)~
 LINE: 21
 LINE: 27
 ----------------------------------------------------------------
+2017-11-13 14:18:56 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Changes Default OC Product Filter
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " AND pf.filter_id IN (" . implode(',', $implode) . ")";
+LINE: 122
+LINE: 496
+CODE: $sql .= " AND p.manufacturer_id = '" . (int)$data['filter_manufacturer_id'] . "'";
+LINE: 199
+LINE: 579
+----------------------------------------------------------------
+MOD: CTRL+Watermark
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height
+LINE: 2
+FILE: system/library/image.php
+CODE: function watermark
+LINE: 136
+----------------------------------------------------------------
+MOD: Fast Multi Upload Images OpenCart 2.0
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <div class="tab-pane" id="tab-image">
+LINE: 1073
+CODE: html  = '<tr id="image-row' + image_row + '">';
+LINE: 1653
+CODE: <?php echo $footer; ?>
+LINE: 1819
+FILE: admin/view/template/common/filemanager.tpl
+CODE: $('#<?php echo $target; ?>').attr('value', $(this).parent().find('input').attr('value'));
+LINE: 59
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 37
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'], 'SSL')),
+LINE: 132
+CODE: public function unzip() {
+LINE: 282
+----------------------------------------------------------------

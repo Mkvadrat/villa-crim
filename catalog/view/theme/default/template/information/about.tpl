@@ -48,7 +48,16 @@
 		<div class="new-about-us">
 		  <h2>О нас</h2>
 
-		  <img class="our-team" src="/image/catalog/our-team.png" alt="">
+		<div class="wrap-slider">
+			<img class="border-img" src="/image/catalog/rama.png" alt="">
+		  <div class="owl-carousel owl-theme">
+		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
+		</div>
+		</div>
+
+		  <!-- <img class="our-team" src="/image/catalog/our-team.png" alt=""> -->
 
 		  <h2>Агентство недвижимости в Алуште «Вилла Крым» это все самое лучшее, что может предложить наш город для тех, кто решил купить недвижимость на ЮБК.</h2>
 
