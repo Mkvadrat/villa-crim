@@ -39,6 +39,7 @@ abbr[title], acronym[title] {
 }
 
 .list-objects li {
+	width: 100%;
 	position: relative;
 	background-color: white;
 	border-radius: 5px;
