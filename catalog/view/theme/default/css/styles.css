@@ -406,20 +406,9 @@ abbr[title], acronym[title] {
 
 }
 
-/*.owl-carousel::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	background-image: url(../images/rama.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}*/
-
 .wrap-slider {
 	position: relative;
+	text-align: center;
 }
 
 .wrap-slider .border-img {
@@ -428,4 +417,33 @@ abbr[title], acronym[title] {
 	left: 0;
 	width: 100%;
 	z-index: 1000;
+}
+
+.wrap-slider .owl-carousel {
+	float: none;
+	position: relative;
+	left: 0;
+	margin-left: 0;
+	display: inline-block !important;
+	width: 100% !important;
+}
+
+.wrap-slider .owl-carousel .podlojka {
+	top: auto !important;
+	bottom: 0 !important;
+}
+
+.wrap-slider .owl-carousel .item img {
+	width: 100% !important;
+	height: auto;
+}
+
+.new-about-us .view {
+	width: 100%;
+}
+
+@media only screen and (max-width : 700px) {
+	.wrap-slider .owl-carousel {
+		display: none !important;
+	}
 }

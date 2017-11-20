@@ -580,9 +580,9 @@
                   </div>
                 </div>
               </div>
-							
-              <div class="form-group">
-                <label class="col-sm-2 control-label"><?php echo $entry_visible; ?></label>
+							<input type="hidden" name="visible" value="0" />
+              <!--<div class="form-group">
+                <label class="col-sm-2 control-label"><?php /*echo $entry_visible; ?></label>
                 <div class="col-sm-10">
                   <label class="radio-inline">
                     <?php if ($visible) { ?>
@@ -600,10 +600,10 @@
                     <?php } else { ?>
                     <input type="radio" name="visible" value="0" />
                     <?php echo $text_no; ?>
-                    <?php } ?>
+                    <?php }*/ ?>
                   </label>
                 </div>
-              </div>
+              </div>-->
 
 							
 							

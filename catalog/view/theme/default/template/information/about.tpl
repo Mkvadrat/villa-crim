@@ -49,11 +49,14 @@
 		  <h2>О нас</h2>
 
 		<div class="wrap-slider">
-			<img class="border-img" src="/image/catalog/rama.png" alt="">
+			<!-- <img class="border-img" src="/image/catalog/rama.png" alt=""> -->
 		  <div class="owl-carousel owl-theme">
-		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
-		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
-		    <div class="item"><img class="our-team" src="/image/catalog/our-team.png" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl1.jpg" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl2.jpg" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl3.jpg" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl4.jpg" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl5.jpg" alt=""></div>
+		    <div class="item"><img class="our-team" src="/image/catalog/sl6.jpg" alt=""></div>
 		</div>
 		</div>
 

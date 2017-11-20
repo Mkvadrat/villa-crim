@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 	// owl-carousel
-	$('.owl-carousel').owlCarousel({
+	/*$('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -25,7 +25,14 @@ $(document).ready(function() {
                 items:1
             }
         }
+    });*/
+    $('.owl-carousel').owlCarousel({
+        items: 6,
+        autoPlay: 4000,
+        singleItem: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+        pagination: true
     });
-
 
 });
