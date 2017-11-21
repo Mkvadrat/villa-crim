@@ -36,7 +36,7 @@
       </ul>
     </div>
   </nav>
-  <img class="slidimg" src="/image/catalog/slid-bg.png">
+  <!-- <img class="slidimg" src="/image/catalog/slid-bg.png"> -->
 
     <?php echo $content_top; ?>
     <div class="right-menu">
@@ -88,8 +88,11 @@
         <li><a href="<?php echo $drugiye_rayony; ?>">Другие районы</a></li>
       </ul>
     </div>
-     <a class="rekom" href="http://villa-crimea.com.ru/srochnaya-prodaja">Срочная продажа</a>
-      <div class="col-sm-10">
+      <div class="col-sm-7">
+        <div class="video-block">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/WTLlcPPeo7c" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <a class="rekom" href="http://villa-crimea.com.ru/srochnaya-prodaja">Срочная продажа</a>
     <?php echo $content_bottom; ?>
       </div>
     </div>

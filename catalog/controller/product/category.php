@@ -288,6 +288,7 @@ class ControllerProductCategory extends Controller {
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
+					'visible'     => $result['visible'],
 					'filter_data' => $this->model_catalog_category->getFiltersData(2, $result['product_id']),
 					'options'     => $this->model_catalog_product->getProductOptions($result['product_id']),//options
 					'badge'		  => $badge,

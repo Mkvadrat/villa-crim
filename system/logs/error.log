@@ -494,3 +494,31 @@
 2017-11-13 11:00:44 - PHP Notice:  Undefined variable: badge_load in D:\OpenServer\domains\villa-crimea.com.ru\admin\view\template\catalog\product_form.tpl on line 338
 2017-11-13 11:00:44 - PHP Notice:  Undefined variable: badge_load in D:\OpenServer\domains\villa-crimea.com.ru\admin\view\template\catalog\product_form.tpl on line 338
 2017-11-13 11:00:44 - PHP Notice:  Undefined variable: badge_load in D:\OpenServer\domains\villa-crimea.com.ru\admin\view\template\catalog\product_form.tpl on line 338
+2017-11-13 13:17:45 - PHP Notice:  Array to string conversion in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 142
+2017-11-13 13:18:01 - PHP Notice:  Undefined index: name in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 142
+2017-11-13 13:20:05 - PHP Notice:  Undefined index: product_option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 139
+2017-11-13 13:20:05 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 139
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 13:38:43 - PHP Notice:  Undefined index: option_value in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/category.tpl on line 143
+2017-11-13 14:20:34 - PHP Notice:  Undefined index: filter_data in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/search.tpl on line 135
+2017-11-13 14:20:34 - PHP Notice:  Undefined index: options in /var/www/u0381560/public_html/villacrim/catalog/view/theme/default/template/product/search.tpl on line 145
+2017-11-17 3:22:40 - PHP Notice:  Undefined variable: price in /var/www/u0381560/public_html/villacrim/catalog/controller/product/category.php on line 300
+2017-11-17 3:22:40 - PHP Notice:  Undefined variable: rub in /var/www/u0381560/public_html/villacrim/catalog/controller/product/category.php on line 301

@@ -302,14 +302,21 @@ div.required .control-label:before {
 }
 .rekom{
 	position: relative;
-	left: 50%;
+	/*left: 50%;
 	top: 500px;
-	margin-left: -350px;
+	margin-left: -350px;*/
 	text-align: center;
 	font-size: 16px;
 	background: url(/image/catalog/bg-rbutt.png) no-repeat;
 	padding: 25px 41px;
 }
+
+.rekom {
+	display: block;
+	width: 227px;
+	margin: 30px auto 0;
+}
+
 .textblok{
 	float: left;
 	margin-left: 6%;
@@ -1275,10 +1282,10 @@ background: url(/image/catalog/head-bg.png) no-repeat 50%;
 .right-navbar {
     margin-top: 500px;
 }
-.rekom {
+/*.rekom {
     top: 500px;
     margin-left: -85px;
-}
+}*/
 .col-sm-10 {
     width: 67%;
     margin-top: 1100px;
@@ -1459,13 +1466,13 @@ display: none;
 .right-menu{
 	display: none;
 }
-.rekom {
+/*.rekom {
 position: relative;
 left: 30%;
 margin-left: 0;
 padding: 24px 40px;
 top: 20px;
-}
+}*/
 .col-sm-10 {
 width: 100%;
 margin-top: 0;
@@ -2400,10 +2407,17 @@ margin-top: 0;
 	margin: 0 auto;
 	padding: 0px;
 	list-style: none;
+	text-align: center;
 }
 
 .new-ontact ul li {
 	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+}
+
+.new-ontact ul li img {
+	width: 100%;
 }
 
 .new-ontact ul li:nth-child(odd) {
@@ -2684,6 +2698,11 @@ margin-top: 0;
 	height: 35px;
 	margin: 0 auto;
 	margin-bottom: 32px;
+}
+
+.new-about-us .view,
+.new-about-us .view1 {
+	width: 100%;
 }
 
 .new-about-us p {

@@ -78,7 +78,8 @@
 				<div class="map-in-contact">
 				  <div class="border-map"></div>
 				  <div class="border-shadow"></div>
-					<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZsKF6ky" width="100%" height="526" frameborder="0" scroll="false"></iframe>
+					<!-- <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZsKF6ky" width="100%" height="526" frameborder="0" scroll="false"></iframe> -->
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A670536aa36849e7397a80e5891d62f3e2d6ad9d877da7264cbc67f1db15936bb&amp;width=100%25&amp;height=526&amp;lang=ru_UA&amp;scroll=false"></script>
 				</div>
 
 			  <h3>Наша команда</h3>
@@ -118,6 +119,39 @@
 					  <i>Телефон:</i> 8 (978) 081-11-02
 							<meta itemprop="contactPoint" content="8 (978) 081-11-02">
 							<meta itemprop="worksFor" content="АН Вилла-Крым">
+					</figcaption>
+				  </figure>
+				</li>
+				<li>
+				  <figure itemscope itemtype="http://schema.org/Person">
+					<img src="/image/catalog/team4.png" alt="">
+					<figcaption>
+					  <span itemprop="name">Виктор Жуков</span><br>
+					  Начальник отдела продаж<br>
+					  <i>Телефон:</i> 8 (978) 815-28-83
+							<meta itemprop="contactPoint" content="8 (978) 815-28-83">
+							<meta itemprop="worksFor" content="АН Вилла-Крым">
+					</figcaption>
+				  </figure>
+				</li>
+				<li>
+				  <figure itemscope itemtype="http://schema.org/Person">
+					<img src="/image/catalog/team5.png" alt="">
+					<figcaption>
+					  <span itemprop="name">Алексей Згеря</span><br>
+					  Специалист по продаже недвижимости<br>
+					  <i>Телефон:</i> 8 (978) 843-02-98
+							<meta itemprop="contactPoint" content="8 (978) 843-02-98">
+							<meta itemprop="worksFor" content="АН Вилла-Крым">
+					</figcaption>
+				  </figure>
+				</li>
+				<li>
+				  <figure itemscope itemtype="http://schema.org/Person">
+					<img src="/image/catalog/team6.png" alt="">
+					<figcaption>
+					  <span itemprop="name">Лепешев Евгений</span><br>
+					  Руководитель строительной организации
 					</figcaption>
 				  </figure>
 				</li>
