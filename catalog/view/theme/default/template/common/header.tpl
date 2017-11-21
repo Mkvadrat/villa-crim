@@ -120,8 +120,9 @@
 <script src="catalog/view/theme/default/js/common.js" type="text/javascript"></script>
 
 <!-- OWL CAROUSEL -->
-<link rel="stylesheet" href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css">
-<script type="text/javascript" src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="catalog/view/theme/default/css/owl.carousel.min.css">
+<link rel="stylesheet" href="catalog/view/theme/default/css/owl.theme.default.min.css">
+<script type="text/javascript" src="catalog/view/theme/default/js/owl.carousel.min.js"></script>
 
 
 <!--<link rel="stylesheet" href="catalog/view/theme/default/css/owl.carousel.min.css">
