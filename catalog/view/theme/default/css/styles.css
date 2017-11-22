@@ -456,3 +456,11 @@ abbr[title], acronym[title] {
 		display: none !important;
 	}
 }
+
+#slideshow0 {
+	display: none;
+}
+
+.video-block {
+	max-width: 100%;
+}

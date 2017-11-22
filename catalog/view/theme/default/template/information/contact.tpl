@@ -104,7 +104,7 @@
 					<figcaption>
 					  <span itemprop="name">Коцеблюк Елена</span><br>
 					  Исполнительный директор<br>
-					  <i>Телефон:</i> 8 (978) 861-24-44
+					  <i>Телефон:</i> 7 (978) 888-16-18
 							<meta itemprop="contactPoint" content="8 (978) 861-24-44">
 							<meta itemprop="worksFor" content="АН Вилла-Крым">
 					</figcaption>
@@ -128,7 +128,7 @@
 					<figcaption>
 					  <span itemprop="name">Виктор Жуков</span><br>
 					  Начальник отдела продаж<br>
-					  <i>Телефон:</i> 8 (978) 815-28-83
+					  <!-- <i>Телефон:</i> 8 (978) 815-28-83 -->
 							<meta itemprop="contactPoint" content="8 (978) 815-28-83">
 							<meta itemprop="worksFor" content="АН Вилла-Крым">
 					</figcaption>
