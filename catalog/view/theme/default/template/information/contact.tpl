@@ -104,7 +104,7 @@
 					<figcaption>
 					  <span itemprop="name">Коцеблюк Елена</span><br>
 					  Исполнительный директор<br>
-					  <i>Телефон:</i> 7 (978) 888-16-18
+					  <i>Телефон:</i> 8 (978) 888-16-18
 							<meta itemprop="contactPoint" content="8 (978) 861-24-44">
 							<meta itemprop="worksFor" content="АН Вилла-Крым">
 					</figcaption>
@@ -124,24 +124,24 @@
 				</li>
 				<li>
 				  <figure itemscope itemtype="http://schema.org/Person">
-					<img src="/image/catalog/team4.png" alt="">
-					<figcaption>
-					  <span itemprop="name">Виктор Жуков</span><br>
-					  Начальник отдела продаж<br>
-					  <!-- <i>Телефон:</i> 8 (978) 815-28-83 -->
-							<meta itemprop="contactPoint" content="8 (978) 815-28-83">
-							<meta itemprop="worksFor" content="АН Вилла-Крым">
-					</figcaption>
-				  </figure>
-				</li>
-				<li>
-				  <figure itemscope itemtype="http://schema.org/Person">
 					<img src="/image/catalog/team5.png" alt="">
 					<figcaption>
 					  <span itemprop="name">Алексей Згеря</span><br>
 					  Специалист по продаже недвижимости<br>
 					  <i>Телефон:</i> 8 (978) 843-02-98
 							<meta itemprop="contactPoint" content="8 (978) 843-02-98">
+							<meta itemprop="worksFor" content="АН Вилла-Крым">
+					</figcaption>
+				  </figure>
+				</li>
+				<li>
+				  <figure itemscope itemtype="http://schema.org/Person">
+					<img src="/image/catalog/team4.png" alt="">
+					<figcaption>
+					  <span itemprop="name">Андрей Горбанёв</span><br>
+					  Специалист по продаже недвижимости<br>
+					  <i>Телефон:</i> 8 (978) 871-81-00
+							<meta itemprop="contactPoint" content="8 (978) 815-28-83">
 							<meta itemprop="worksFor" content="АН Вилла-Крым">
 					</figcaption>
 				  </figure>
